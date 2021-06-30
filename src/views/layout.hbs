@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Link Aggregator</title>
+		<link rel="stylesheet" href="/css/site.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        {{#if user}}
+            <header>
+                <span>
+                    <a href="/article/add">Add Article</a> | <a href="/">Home</a>
+                </span>
+                <h5>Logged in as {{ user.username }}</h5>
+            </header>
+        {{else}}
+            <header>
+                <h5><a href="/">Home</a></h5>
+                <span>
+                    <a href="/login">Log In</a> | <a href="/register">Register</a>
+                </span>
+            </header>
+        {{/if}}
+        <main>
+            <h1>Link Aggregator</h1>
+            {{{ body }}}
+        </main>
+    </body>
+</html>

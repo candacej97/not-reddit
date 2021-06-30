@@ -1,0 +1,9 @@
+<h3>Links Gathered{{#if username}} by {{this.username}}{{/if}}</h3>
+
+<ol>
+    {{#each result}}
+    <li>
+        <a href='{{this.url}}'>{{this.title}}</a> - [<a href='/article/{{this.slug}}'>details</a>]
+    </li>
+    {{/each}}
+</ol>

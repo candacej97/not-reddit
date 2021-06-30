@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+    padding-left: 2%;
+}
+
+header {
+    padding: 2%;
+    display: inline-flex;
+}
+
+header span {
+    right: 2%;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    padding: initial;
+}
+
+h5 {
+    margin: 0;
+    width: fit-content;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: initial;
+}
+
+a:focus, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
