@@ -1,3 +1,4 @@
+let PORT = process.env.PORT || 3000;
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -150,4 +151,4 @@ app.get('/:username', (req, res) => {
     });
 });
 
-app.listen(3000);
+app.listen(PORT);
